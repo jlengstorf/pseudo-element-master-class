@@ -154,13 +154,32 @@ footer {
 
         li {
             display: inline-block;
-            margin: 0 20px;
+            margin: 0 10px;
             font-family: $mainFont;
             font-size: 17px;
             color: #666461;
 
             a {
                 color: inherit;
+
+                &:before {
+                    display: inline-block;
+                    margin-right: 4px;
+                    font-family: 'FontAwesome';
+                    vertical-align: -5%;
+                }
+
+                &[href*="twitter.com"]:before {
+                    content: '\F099';
+                }
+
+                &[href*="facebook.com"]:before {
+                    content: '\F09A';
+                }
+
+                &[href*="github.com"]:before {
+                    content: '\F09B';
+                }
             }
         }
     }
