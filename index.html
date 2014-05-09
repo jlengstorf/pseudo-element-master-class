@@ -54,6 +54,8 @@
 
         <section data-markdown>
             <script type="text/template">
+                <!-- .slide: data-background="url(img/jason-lengstorf.jpg)" -->
+
                 ## A Little Background on Me
 
                 * I&rsquo;m the found of Copter Labs <!-- .element: class="fragment" -->
@@ -65,6 +67,27 @@
         <section data-markdown>
             <script type="text/markdown">
                 # Pseudo-Elements?
+            </script>
+        </section>
+
+        <section>
+            <h3>Pseudo-Elements Make the Web Sexier</h3>
+            <div class="beckham">
+                <img src="img/beckham.jpg" alt="Beckham">
+            </div>
+            <button id="sexytime">Make It Sexier!</button>
+            <script>
+                var button = document.getElementById('sexytime');
+
+                button.addEventListener('click', function(){
+                    var photo = document.querySelectorAll('.beckham')[0],
+                        currentClasses = photo.className;
+                    if (currentClasses.match('sexier')) {
+                        photo.className = photo.className.replace('sexier', '');
+                    } else {
+                        photo.className = photo.className + ' sexier';
+                    }
+                });
             </script>
         </section>
 
@@ -254,26 +277,6 @@
                     </a>
                 </p>
             </div>
-        </section>
-
-        <section>
-            <div class="beckham">
-                <img src="img/beckham.jpg" alt="Beckham">
-            </div>
-            <button id="sexytime">Make It Sexier!</button>
-            <script>
-                var button = document.getElementById('sexytime');
-
-                button.addEventListener('click', function(){
-                    var photo = document.querySelectorAll('.beckham')[0],
-                        currentClasses = photo.className;
-                    if (currentClasses.match('sexier')) {
-                        photo.className = photo.className.replace('sexier', '');
-                    } else {
-                        photo.className = photo.className + ' sexier';
-                    }
-                });
-            </script>
         </section>
 
         <section>
