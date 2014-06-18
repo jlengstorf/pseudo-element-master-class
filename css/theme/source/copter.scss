@@ -59,9 +59,22 @@ $selectionBackgroundColor: $linkColor;
     .slides>section {
         background-size: cover;
         background-repeat: no-repeat;
+
+        &.push-right {
+            padding-left: 40%;
+
+            h2 {
+                text-align: left;
+            }
+        }
+
+        blockquote {
+            box-shadow: none;
+            color: lighten($mainColor, 15%);
+        }
     }
 
-    .slide-background.present {
+    .slide-background {
         background-size: cover !important;
         background-position: center !important;
     }

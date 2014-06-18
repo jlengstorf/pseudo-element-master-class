@@ -54,9 +54,9 @@
 
         <section data-markdown>
             <script type="text/template">
-                <!-- .slide: data-background="url(img/jason-lengstorf.jpg)" -->
+                <!-- .slide: data-background="url(img/jason-lengstorf.jpg)" class="push-right" -->
 
-                ## A Little Background on Me
+                ## A Little Background
 
                 * I&rsquo;m the founder of Copter Labs <!-- .element: class="fragment" -->
                 * I&rsquo;ve been pixel pushing since 2003 <!-- .element: class="fragment" -->
@@ -84,8 +84,10 @@
                         currentClasses = photo.className;
                     if (currentClasses.match('sexier')) {
                         photo.className = photo.className.replace('sexier', '');
+                        this.innerHTML = 'Make It Sexier!';
                     } else {
                         photo.className = photo.className + ' sexier';
+                        this.innerHTML = 'Too Much Sexy!';
                     }
                 });
             </script>
@@ -596,13 +598,12 @@ var style = window.getComputedStyle(document.body, ':after')
 
 </div>
 
-
 <footer>
     <ul class="inline">
         <li>&ldquo;CSS Pseudo-Element Master Class&rdquo; by <a href="http://lengstorf.com">Jason Lengstorf</a></li>
         <li><a href="https://twitter.com/jlengstorf">@jlengstorf</a></li>
         <li><a href="https://facebook.com/jasonlengstorf">facebook.com/jasonlengstorf</a></li>
-        <li><a href="https://github.com/jlengstorf/pseudo-element-master-class/">Slides &amp; Examples on GitHub</a></li>
+        <li><a href="https://github.com/jlengstorf/pseudo-element-master-class/">View This on GitHub</a></li>
     </ul>
 </footer>
 

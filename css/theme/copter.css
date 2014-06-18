@@ -157,7 +157,14 @@ body {
 .reveal .slides > section {
   background-size: cover;
   background-repeat: no-repeat; }
-.reveal .slide-background.present {
+  .reveal .slides > section.push-right {
+    padding-left: 40%; }
+    .reveal .slides > section.push-right h2 {
+      text-align: left; }
+  .reveal .slides > section blockquote {
+    box-shadow: none;
+    color: #676662; }
+.reveal .slide-background {
   background-size: cover !important;
   background-position: center !important; }
 
